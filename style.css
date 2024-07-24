@@ -1,10 +1,21 @@
 :root{
     --primary: #83B719;
     --secondary: #00447A;
+    --grey-1: #F6F6F6;
     --grey: #D5D5D5;
+    --grey-2: #dddddd;
     --lightgrey: #E0EDC5;
     --dark: #2B2B2B;
-    --blue: rgba(0,68,122,.75)
+    --form: rgba(0,68,122,.75);
+    --panel: rgba(11,19,52,70);
+    --darkblue: #060A1B;
+    --darkblue2: #0B1334;
+    --bluesky: #86DAD7;
+    --aqua: #2CBEB9;
+    --lightblue: #80A1BC;
+    --blue: #80A1BC;
+    --lightgreen: #E0EDC5;
+    --nav-bg: rgba(0,0,0,65);
 }
 
 /* typography*/
@@ -53,6 +64,10 @@ body{
 
 .border-blue{
     border-color: var(--secondary)!important
+}
+
+.bg-gradient{
+    background: linear-gradient(#131324, #0E1386, #06083D)
 }
 
 p{
