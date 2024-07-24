@@ -1,6 +1,6 @@
 :root{
-    --primary: #00447A;
-    --secondary: #83B719;
+    --primary: #83B719;
+    --secondary: #00447A;
     --grey: #D5D5D5;
     --lightgrey: #E0EDC5;
     --dark: #2B2B2B;
@@ -37,4 +37,28 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+.bg-green{
+    background: var(--primary)
+}
+
+.bg-blue{
+    background: var(--secondary)
+}
+
+.border-green{
+    border-color: var(--primary)!important
+}
+
+.border-blue{
+    border-color: var(--secondary)!important
+}
+
+p{
+    font-weight: semibold;
+}
+
+strong{
+    font-weight: bold;
 }
