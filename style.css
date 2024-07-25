@@ -15,7 +15,7 @@
     --lightblue: #80A1BC;
     --blue: #80A1BC;
     --lightgreen: #E0EDC5;
-    --nav-bg: rgba(0,0,0,65);
+    --nav-bg: rgba(0,0,0,.65);
 }
 
 /* typography*/
@@ -50,12 +50,54 @@ body{
     font-style: normal;
 }
 
+main{
+    background: var(--blue); 
+} 
+
+figure, p{
+    margin: 0;
+}
+h2{
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2:before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(assets/isologo.svg) no-repeat 100%;
+    background-size: contain;
+    margin: 16px;
+}
+
+header.banner{
+    padding: 6em 0;
+    background: var(--blue); 
+}
+
+header.banner:after{
+    content:'';
+    width: 100%;
+    height: 50px;
+    background: var(--blue);
+    border-bottom-right-radius: 5em !important;
+    border-bottom-left-radius: 5em !important;
+}
+ 
 .bg-green{
     background: var(--primary)
 }
 
 .bg-blue{
     background: var(--secondary)
+}
+
+.bg-grey{
+    background: var(--grey);
 }
 
 .border-green{
@@ -76,4 +118,8 @@ p{
 
 strong{
     font-weight: bold;
+}
+
+.menu-principal{
+    background: var(--nav-bg)
 }
