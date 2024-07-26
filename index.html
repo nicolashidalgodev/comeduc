@@ -17,15 +17,15 @@
 
     <main>
 
-        <nav class="shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg">
+        <nav class="p-3 shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg">
             <div class="container-fluid"> 
                 <div class="col-3">
                     <a class="navbar-brand" href="#">
                         <img src="assets/comeduc-logo.svg" alt="">
                     </a>
                 </div>
-                <div class="col-9 justify-content-end d-flex">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <div class="col-9 justify-content-end d-lg-flex">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -33,22 +33,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="">Inicio</a>
+                                <a class="nav-link" href="#inicio">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Seminario TP</a>
+                                <a class="nav-link" href="#seminario">Seminario TP</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Nosotros</a>
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Cronograma</a>
+                                <a class="nav-link" href="#cronograma">Cronograma</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Speakers</a>
+                                <a class="nav-link" href="#speakers">Speakers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn  btn-inscribete" href="">Inscríbete</a>
+                                <a class="btn  btn-inscribete" href="#inscribete">Inscríbete</a>
                             </li>
                         </ul>
                     </div> 
@@ -56,7 +56,7 @@
             </div> 
         </nav>
 
-        <header class="banner bg-blue">
+        <header class="banner bg-blue" id="inicio">
             <div class="container">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="text-light col-9 col-lg-5 d-flex align-items-start flex-column justify-content-start justify-content-lg-center">
@@ -74,7 +74,7 @@
             </div>
         </header>
 
-        <section class="py-5 bg-grey">
+        <section class="py-5 bg-grey" id="seminario">
             <div class="container py-5">
                 <div class="card rounded-5 py-5 px-4 shadow border-0">
                     <article class="mb-4">
@@ -142,14 +142,14 @@
                                 <label for="nombre" class="form-label mb-0">Teléfono</label>
                                 <input type="text" id="nombre" class="form-control rounded-1">
                             </div>  
-                            <button type="submit" class="py-3 w-100 btn bg-green">Inscríbete</button>
+                            <button type="submit" class="py-3 w-100 btn bg-green text-light">Inscríbete</button>
                         </fieldset>
                     </form>
                 </div> 
             </div>
         </section>
 
-        <section class="py-5 bg-light">
+        <section class="py-5 bg-light" id="cronograma">
             <div class="container">
                 <header>
                     <h2>Cronograma</h2>
@@ -164,7 +164,7 @@
                         <span class="bullet"></span>
                         <span class="line"></span>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 text-start">
                         <h3>
                             <strong class="text-primary d-block mb-1 fw-light">29 de julio</strong>
                             <span class="fs-5 fw-semibold">Inicio de inscripciones y programa</span>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center mb-4 crono">
-                    <div class="col-5">
+                    <div class="col-5 text-end">
                         <h3>
                             <strong class="text-aqua d-block mb-2 fw-light">12 de agosto</strong>
                             <span class="fs-5 fw-semibold">Cierre de inscripciones</span>
@@ -181,7 +181,7 @@
                         <p class="fw-light fs-6">Revisión de inscripciones</p>
                     </div>
                     <div class="col-1">
-                        <span class="bullet"></span>
+                        <span class="bullet aqua"></span>
                         <span class="line"></span>
                     </div>
                     <div class="col-5">
@@ -198,10 +198,10 @@
                         </div>
                     </div>
                     <div class="col-1">
-                        <span class="bullet"></span>
+                        <span class="bullet blue"></span>
                         <span class="line"></span>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 text-start">
                         <h3>
                             <strong class="text-blue d-block mb-2 fw-light">19 de agosto</strong>
                             <span class="fs-5 fw-semibold">Ratificación inscripciones</span>
@@ -211,7 +211,7 @@
                 </div>
 
                 <div class="row justify-content-center mb-4 crono">
-                    <div class="col-5">
+                    <div class="col-5 text-end">
                         <h3>
                             <strong class="text-primary d-block mb-1 fw-light">29 de agosto</strong>
                             <span class="fs-5 fw-semibold">Día del evento Seminario TP</span>
@@ -230,7 +230,7 @@
             </div>
         </section>
 
-        <section class="bg-gradient">
+        <section class="bg-gradient" id="speakers">
             <div class="py-5 container">
                 <header>
                     <h2 class="text-light">Presentan</h2>
@@ -486,22 +486,76 @@
                 <header>
                     <h2>Mesas de trabajo</h2>
                 </header>
-                <section class="slide">
-                    <article>
-                        <header>
-                            <div>Nombre mesa</div>
-                            <p>Innovacion eduactiva TP</p>
-                        </header>
-                        <div>
-                            <div>Presentador</div>
-                            <figure>
-                                <img src="" alt="">
-                                <h4>Pilar Veas</h4>
-                                <p>Fundación País Digital</p>
-                            </figure>
-                        </div>
-                    </article>
-                </section>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <section class="carousel-item active">
+                            <article class="container">
+                                <div class="row d-flex justify-content-center"> 
+                                    <div class="col-2"></div>
+                                    <header class="col-3">
+                                        <div class="badge mb-3 bg-primary text-dark rounded-5 fw-light p-2">Nombre mesa</div>
+                                        <p class="text-blue h2">Innovacion eduactiva TP</p>
+                                    </header>
+                                    <div class="col-1"></div>
+                                    <div class="col-6">
+                                        <div class="badge mb-3 bg-primary text-dark rounded-5 fw-light p-2">Presentador</div>
+                                        <div class="container">
+                                            <div class="row"> 
+                                                <div class="col-lg-3 mb-3">
+                                                    <div class="circle-image">
+                                                        <img src="assets/perfil-8.jpg" class="w-100" alt="">  
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-9 ps-4 align-items-start d-flex flex-column">
+                                                    <h4 class="text-primary">Pilar Veas</h4>
+                                                    <p>Fundación País Digital</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>                            
+                        <section class="carousel-item">
+                            <article class="container">
+                                <div class="row d-flex justify-content-center"> 
+                                    <div class="col-2"></div>
+                                    <header class="col-3">
+                                        <div class="badge mb-3 bg-primary text-dark rounded-5 fw-light p-2">Nombre mesa</div>
+                                        <p class="text-blue h2">Innovacion eduactiva TP</p>
+                                    </header>
+                                    <div class="col-1"></div>
+                                    <div class="col-6">
+                                        <div class="badge mb-3 bg-primary text-dark rounded-5 fw-light p-2">Presentador</div>
+                                        <div class="container">
+                                            <div class="row"> 
+                                                <div class="col-lg-3 mb-3">
+                                                    <div class="circle-image">
+                                                        <img src="assets/perfil-8.jpg" class="w-100" alt="">  
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-9 ps-4 align-items-start d-flex flex-column">
+                                                    <h4 class="text-primary">Pilar Veas</h4>
+                                                    <p>Fundación País Digital</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>                            
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
             </div>
         </section>
 
@@ -520,16 +574,16 @@
                     <h2>Colaboran</h2>
                 </header>
                 <div class="row justify-content-center">
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-cpc.jpg" alt="">
                     </div>
-                    <div class="col-1 align-items-center d-flex">
+                    <div class="col-6 col-lg-1 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-cncn.png" alt="">
                     </div>
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-bchile.png" alt="">
                     </div>
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-inacap.jpg" alt="">
                     </div>  
                 </div>
@@ -542,30 +596,30 @@
                     <h2>Participan</h2>
                 </header>
                 <div class="row justify-content-around">
-                    <div class="col-1 align-items-center d-flex">
+                    <div class="col-6 col-lg-1 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-pais-digital.jpg" alt="">
                     </div>  
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-fch.png" alt="">
                     </div>  
-                    <div class="col-3 align-items-center d-flex">
+                    <div class="col-6 col-lg-3 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-ciled.jpg" alt="">
                     </div>  
-                    <div class="col-3 align-items-center d-flex">
+                    <div class="col-6 col-lg-3 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-techno.jpg" alt="">
                     </div>  
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-id.jpg" alt="">
                     </div>  
                 </div>  
                 <div class="row justify-content-center mb-5">
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-accenture.jpg" alt="">
                     </div>  
-                    <div class="col-4 align-items-center d-flex">
+                    <div class="col-6 col-lg-4 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-tp.png" alt="">
                     </div>  
-                    <div class="col-2 align-items-center d-flex">
+                    <div class="col-6 col-lg-2 align-items-center d-flex">
                         <img class="w-100" src="assets/logo-cdi.jpg" alt="">
                     </div>  
                 </div>
