@@ -15,8 +15,47 @@
 
 <body>
 
-    <main>
-
+    <main> 
+        
+        <nav class="p-3 shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0" href="#"> 
+                    <img src="assets/comeduc-logo.svg" alt="COMEDUC">
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offCanvas" aria-labelledby="offCanvasLabel">
+                    <div class="offcanvas-header w-100 p-0">
+                        <h5 class="offcanvas-title invisible" id="offCanvasLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item text-end" data-bs-dismiss="offcanvas">
+                                <a class="nav-link active" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item text-end" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="#seminario">Seminario TP</a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link" href="#cronograma">Cronograma</a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link" href="#speakers">Speakers</a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="btn  btn-inscribete" href="#inscribete">Inscríbete</a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <!--
         <nav id="navbar" class="p-3 shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg">
             <div class="container-fluid">
                 <div class="col-lg-3 col-12 justify-content-between d-flex">
@@ -55,6 +94,7 @@
                 </div>
             </div>
         </nav>
+        -->
 
         <header class="banner bg-blue" id="inicio">
             <div class="container">
