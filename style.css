@@ -118,12 +118,16 @@ strong{
 
 /* backgrounds */
  
-.bg-green{
-    background: var(--primary)
+.bg-green, .bg-primary{
+    background: var(--primary)!important;
 }
 
 .bg-blue{
     background: var(--secondary)
+}
+
+.bg-aqua{
+    background: var(--aqua)
 }
 
 .bg-grey{
@@ -170,8 +174,34 @@ strong{
     border-bottom: 1px solid var(--celeste); 
 }
 
-.bg-gradient h4{
+.bg-gradient .card h4{
     color: var(--celeste);
+}
+
+.bg-gradient .card.card-aqua{
+    border: 1px solid var(--aqua);
+}
+
+.bg-gradient .card-aqua .card-header{
+    color: var(--aqua);
+    border-bottom: 1px solid var(--aqua); 
+}
+
+.bg-gradient .card.card-aqua h4{
+    color: var(--aqua);
+}
+
+.bg-gradient .card.card-primary{
+    border: 1px solid var(--primary);
+}
+
+.bg-gradient .card-primary .card-header{
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary); 
+}
+
+.bg-gradient .card.card-primary h4{
+    color: var(--primary);
 }
 
 .circle-image{
@@ -181,19 +211,32 @@ strong{
     border-radius: 50%;
     border: 4px solid var(--celeste);
 }
+
 .circle-image img{
     object-fit: cover;
     height: 100%;
 }
 
+.card-aqua .circle-image{
+    border: 4px solid var(--aqua);
+}
+
+.card-primary .circle-image{
+    border: 4px solid var(--primary);
+}
+
 /* borders */
 
-.border-green{
+.border-green, .border-primary{
     border-color: var(--primary)!important
 }
 
 .border-blue{
     border-color: var(--secondary)!important
+}
+
+.border-aqua{
+    border-color: var(--aqua)!important
 }
 
 /* video */
