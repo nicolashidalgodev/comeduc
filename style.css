@@ -219,3 +219,11 @@ strong{
 .form legend{
     font-weight: 600; 
 }
+
+footer{
+    background: var(--darkblue2);
+}
+
+footer nav{
+    background: var(--darkblue);
+}
