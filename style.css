@@ -78,8 +78,15 @@ header.banner .container{
 } 
 
 header.banner .carousel-fade img{ 
-    object-fit: cover;
-    height: 100vh;
+    object-fit: cover; 
+}
+
+@media (max-width: 780px){
+
+    header.banner .carousel-fade img{ 
+       height: 100vh
+    }   
+
 }
 
 /* typography*/
