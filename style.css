@@ -47,13 +47,17 @@ main{
     font-size: 14px;
 }
 
-.navbar-toggler-icon{
-    filter: invert();
+.navbar-toggler-icon{ 
     padding: 0;
 }
 
-.navbar-toggler{
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible,{
     border: none;
+    box-shadow: none;
+    padding: 0;
 }
 
 .offcanvas {
