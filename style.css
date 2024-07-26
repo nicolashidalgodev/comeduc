@@ -10,6 +10,7 @@
     --panel: rgba(11,19,52,70);
     --darkblue: #060A1B;
     --darkblue2: #0B1334;
+    --celeste: #00B1E9;
     --bluesky: #86DAD7;
     --aqua: #2CBEB9;
     --lightblue: #80A1BC;
@@ -131,6 +132,7 @@ strong{
 
 .bg-gradient{
     background: linear-gradient(#131324, #0E1386, #06083D)!important;
+    position: relative;
 }
 
 .bg-gradient:before{ 
@@ -141,11 +143,47 @@ strong{
     position: absolute;
     background-image: url(assets/bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
     background-attachment: fixed;
     background-position: center center;
     background-color: transparent;
     z-index: 1; 
+}
+
+.bg-gradient header,
+.bg-gradient section{
+    z-index: 2; 
+    position: relative;
+}
+
+.bg-gradient section{
+    background: var(--panel);
+    color: #ffffff;
+}
+
+.bg-gradient .card{
+    border: 1px solid var(--celeste);
+}
+
+.bg-gradient .card-header{
+    color: var(--celeste);
+    border-bottom: 1px solid var(--celeste); 
+}
+
+.bg-gradient h4{
+    color: var(--celeste);
+}
+
+.circle-image{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid var(--celeste);
+}
+.circle-image img{
+    object-fit: cover;
+    height: 100%;
 }
 
 /* borders */
@@ -166,6 +204,7 @@ strong{
     height: 0;
     padding-bottom: 56.25%;
 }
+
 .container-video .video {
     position: absolute;
     top: 0;
@@ -194,7 +233,6 @@ strong{
     z-index: 1;
     margin-top: -50px; 
 }
-
 
 #inscribete:after{
     content: "";
