@@ -32,6 +32,15 @@ main{
 .menu-principal{
     background: var(--nav-bg)
 }
+.navbar{
+    height:auto;
+    tramsition: all .3s ease;
+}
+
+.navbar.active{
+    height: 80px;
+}
+
 .nav-item{
     padding: 0 8px;
 }
