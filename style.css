@@ -58,7 +58,7 @@ main{
 }
 
 header.banner{
-    padding: 6em 0;
+    padding: 12em 0;
     height: 100vh;
     background: var(--blue); 
     position: relative;
@@ -75,6 +75,11 @@ header.banner .carousel{
 header.banner .container{
     z-index: 3;
     position: relative;
+} 
+
+header.banner .carousel-fade img{ 
+    object-fit: cover;
+    height: 100vh;
 }
 
 /* typography*/
