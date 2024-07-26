@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,11 @@
 </head>
 
 <body>
+
     <main>
+
         <nav class="shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg">
-            <div class="container">
+            <div class="container-fluid"> 
                 <div class="col-3">
                     <a class="navbar-brand" href="#">
                         <img src="assets/comeduc-logo.svg" alt="">
@@ -24,10 +26,10 @@
                 </div>
                 <div class="col-9 justify-content-end d-flex">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -49,20 +51,20 @@
                                 <a class="btn btn-outline-success" href="">Inscríbete</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+                    </div> 
+                </div> 
+            </div> 
         </nav>
 
         <header class="banner bg-blue">
             <div class="container">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="text-light col-5 d-flex align-items-start flex-column justify-content-center">
-                        <h1 class="h6">
+                        <h1 class="h5 fw-light">
                             Fundación Educacional Comeduc
-                            <strong>Seminario TP 2024</strong>
+                            <strong class="d-block">Seminario TP 2024</strong>
                         </h1>
-                        <p class="display-6">Donde la innovación converge con la excelencia</p>
+                        <p class="display-5 mb-3">Donde la innovación <strong>converge con la excelencia</strong></p>
                         <a class="px-4 py-2 btn btn-success shadow rounded-5 bg-green border-green">Conoce más</a>
                     </div>
                     <div class="col-4 d-flex justify-content-end">
@@ -74,7 +76,7 @@
 
         <section class="py-5 bg-grey">
             <div class="container">
-                <div class="card rounded-5 p-4 shadow border-0">
+                <div class="card rounded-5 py-5 px-4 shadow border-0">
                     <article class="mb-4">
                         <div class="card-body row">
                             <div class="col-md-1 d-flex justify-content-center">
@@ -83,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="col-md-11">
-                                <p class="m-0">Donde la innovación converge con la excelencia, organizado por la <strong>Fundación Educacional Comeduc</strong>, es un encuentro sin precedentes, donde la innovación y el diálogo se unen para redefinir el futuro de la <strong>Educación Media Técnico Profesional en Chile</strong>.</p>
+                                <p class="m-0 h4">Donde la innovación converge con la excelencia, organizado por la <strong>Fundación Educacional Comeduc</strong>, es un encuentro sin precedentes, donde la innovación y el diálogo se unen para redefinir el futuro de la <strong>Educación Media Técnico Profesional en Chile</strong>.</p>
                             </div>
                         </div>
                     </article>
@@ -95,7 +97,7 @@
                                 </div>
                             </div>
                             <div class="col-md-11">
-                                <p class="m-0">Este evento busca ser un <strong>punto de encuentro</strong> entre la comunidad educativa de nuestra Fundación, el <strong>mundo empresarial</strong> y el <strong>sector académico</strong>, contribuyendo no sólo al <strong>crecimiento de nuestros estudiantes</strong> sino también al desarrollo sostenible de <strong>nuestra sociedad</strong>.</p>
+                                <p class="m-0 h4">Este evento busca ser un <strong>punto de encuentro</strong> entre la comunidad educativa de nuestra Fundación, el <strong>mundo empresarial</strong> y el <strong>sector académico</strong>, contribuyendo no sólo al <strong>crecimiento de nuestros estudiantes</strong> sino también al desarrollo sostenible de <strong>nuestra sociedad</strong>.</p>
                             </div>
                         </div>
                     </article>
@@ -108,38 +110,42 @@
                 <header>
                     <h2>Sobre nuestra <strong>Fundación</strong></h2>
                 </header>
-                <!--video iframe-->
+                <div class="container-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/p60H2amKSVY?si=9ow9eTyteVoUhd-Q" title="Comeduc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
-        <section class="py-5 bg-grey">
+        <section id="inscribete" class="py-5 bg-grey">
             <div class="container">
-                <header>
-                    <h2>Súmate a este gran evento</h2>
-                </header>
-                <form action="">
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Apellido</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Institución</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Email</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Teléfono</label>
-                        <input type="text">
-                    </div>
-                    <input type="submit" value="Inscríbete" />
-                </form>
+                <div class="row">
+                    <form class="form col-5 mx-auto p-5">
+                        <fieldset>
+                            <legend class="mb-4">Súmate a este gran evento</legend>
+                            <div class="mb-2">
+                                <label for="nombre" class="form-label mb-0">Nombre</label>
+                                <input type="text" id="nombre" class="form-control rounded-1">
+                            </div>  
+                            <div class="mb-2">
+                                <label for="nombre" class="form-label mb-0">Apellido</label>
+                                <input type="text" id="nombre" class="form-control rounded-1">
+                            </div>  
+                            <div class="mb-2">
+                                <label for="nombre" class="form-label mb-0">Institución</label>
+                                <input type="text" id="nombre" class="form-control rounded-1">
+                            </div>  
+                            <div class="mb-2">
+                                <label for="nombre" class="form-label mb-0">Email</label>
+                                <input type="text" id="nombre" class="form-control rounded-1">
+                            </div>  
+                            <div class="mb-5">
+                                <label for="nombre" class="form-label mb-0">Teléfono</label>
+                                <input type="text" id="nombre" class="form-control rounded-1">
+                            </div>  
+                            <button type="submit" class="py-3 w-100 btn bg-green">Inscríbete</button>
+                        </fieldset>
+                    </form>
+                </div> 
             </div>
         </section>
 
@@ -360,9 +366,11 @@
         </footer>
 
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
