@@ -38,10 +38,6 @@ main{
     tramsition: all .3s ease;
 }
 
-.navbar.active{
-    height: 80px;
-}
-
 .nav-item{
     padding: 0 8px;
 }
