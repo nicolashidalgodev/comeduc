@@ -519,11 +519,7 @@ footer nav{
         background: #000000;
         width: 100%;
         padding: 10px 20px;
-    }
-    
-    .navbar{
-        height: 200px;
-    }
+    } 
 
     .navbar .container-fluid{
         flex-direction: column; 
