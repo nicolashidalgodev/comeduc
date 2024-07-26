@@ -32,8 +32,9 @@ main{
 .menu-principal{
     background: var(--nav-bg)
 }
+
 .navbar{
-    height:auto;
+    height: auto;
     tramsition: all .3s ease;
 }
 
@@ -90,6 +91,21 @@ main{
 .navbar.active:after{
     display: none;
     transition:  al .3s ease-in-out;
+}
+
+.navbar .isotipo{
+    display: none;
+}
+
+.navbar .logotipo{
+    display: block;
+}
+.navbar.active .isotipo{
+    display: block;
+}
+
+.navbar.active .logotipo{
+    display: none;
 }
 
 .navbar .nav-link{
@@ -485,8 +501,7 @@ footer nav{
 }
 
 @media (min-width: 576px){
-
-
+    
     .navbar.active .logo{
         width: 300px;
         padding: 32px; 
@@ -530,4 +545,5 @@ footer nav{
         position: absolute;
         right: 0; 
     }
+    
 }
