@@ -91,6 +91,7 @@ main{
 
 .navbar .isotipo{
     display: none;
+    height: 20px;
 }
 
 .navbar .logotipo{
