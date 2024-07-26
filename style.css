@@ -50,6 +50,58 @@ main{
     font-size: 14px;
 }
 
+.navbar-toggler-icon{
+    filter: invert();
+    padding: 0;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.offcanvas {
+    width: 50%;
+}
+
+.offcanvas{
+    background: black;
+    text-align: left;
+    padding: 20px; 
+} 
+
+.navbar{
+    height: auto; 
+}
+
+.navbar.active{
+    height: 60px;
+    background: rgba(0,0,0,.75);
+} 
+
+.navbar.active  .container-fluid{
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar.active .offcanvas{
+    align-items: start; 
+}
+
+.navbar.active:after{
+    display: none;
+    transition:  al .3s ease-in-out;
+}
+
+.navbar .nav-link{
+    font-size: 12px; 
+    font-weight: normal;
+    color: white;
+}
+
+.navbar .nav-link.active{
+    color: white;
+}
+
 .btn-inscribete{
     background: rgba(0, 0, 0, .3);
     border: 1px solid var(--primary);
@@ -425,4 +477,57 @@ footer{
 
 footer nav{
     background: var(--darkblue);
+}
+
+.offcanvas{
+    background-color: #000000!important;
+    width: 70%!important;
+}
+
+@media (min-width: 576px){
+
+
+    .navbar.active .logo{
+        width: 300px;
+        padding: 32px; 
+        margin: 32px 0;
+    }
+
+    .logo{
+        margin: 60px auto 20px;
+        max-width: 500px;
+    }
+    
+    .navbar.active .offcanvas{
+        align-items: end; 
+    }
+    
+    .offcanvas{
+        height: auto;
+        background: #000000;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    .navbar{
+        height: 200px;
+    }
+
+    .navbar .container-fluid{
+        flex-direction: column; 
+    }
+
+    .navbar:after{
+        content: '';
+        background: url(svg/menu-deco.svg) no-repeat center center;
+        background-size: contain;
+        bottom: -30px;
+        display: block;
+        height: 30px;
+        left: 0;
+        margin: 0 auto;
+        width: 350px;
+        position: absolute;
+        right: 0; 
+    }
 }
