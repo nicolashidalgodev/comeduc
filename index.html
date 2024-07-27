@@ -18,7 +18,7 @@
     <main> 
         
         <nav class="p-3 shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg" id="navbar">
-            <div class="container-fluid d-flex flex-row">
+            <div class="container-fluid pe-0 d-flex flex-row">
                 <a class="navbar-brand m-0" href="#"> 
                     <img src="assets/comeduc-logo.svg" alt="COMEDUC" class="logotipo">
                     <img src="assets/isologo.svg" alt="COMEDUC" class="isotipo">
@@ -32,7 +32,7 @@
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1">
                             <li class="nav-item text-end" data-bs-dismiss="offcanvas">
                                 <a class="nav-link active" href="#inicio">Inicio</a>
                             </li>
@@ -49,69 +49,40 @@
                                 <a class="nav-link" href="#speakers">Speakers</a>
                             </li>
                             <li class="nav-item text-end" data-bs-dismiss="offcanvas">
-                                <a class="btn  btn-inscribete" href="#inscribete">Inscríbete</a>
+                                <a class="btn btn-inscribete" href="#inscribete">Inscríbete</a>
                             </li>
                         </ul> 
                     </div>
                 </div>
             </div>
-        </nav> 
-        <!--
-        <nav id="navbar" class="p-3 shadow-lg menu-principal fixed-top navbar navbar-dark navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="col-lg-3 col-12 justify-content-between d-flex">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/comeduc-logo.svg" alt="">
-                    </a>
-                    <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="col-12 col-lg-9 justify-content-end d-lg-flex">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#inicio">Inicio</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#seminario">Seminario TP</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#nosotros">Nosotros</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#cronograma">Cronograma</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#speakers">Speakers</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="btn  btn-inscribete" href="#inscribete">Inscríbete</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </nav>
-        -->
 
         <header class="banner bg-blue" id="inicio">
-            <div class="container">
-                <div class="row d-flex align-items-center justify-content-center">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
                     <div
-                        class="text-light col-9 col-lg-5 d-flex align-items-start flex-column justify-content-start justify-content-lg-center">
+                        class="text-light col-12 col-lg-4 d-flex align-items-start flex-column justify-content-start justify-content-lg-center">
                         <h1 class="h5 fw-light">
                             Fundación Educacional Comeduc
-                            <strong class="d-block">Seminario TP 2024</strong>
+                            <strong class="h4 fw-semibold d-block">Seminario TP 2024</strong>
                         </h1>
-                        <p class="display-5 mb-3 text-shadow">Donde la innovación <strong>converge con la
-                                excelencia</strong></p>
-                        <a class="px-5 py-3 btn btn-success shadow rounded-5 bg-green border-green">Conoce más</a>
+                        <p class="display-4 mb-3 text-shadow" style="line-height: 1.1   em;">
+                            Donde la innovación 
+                            <strong>converge con la excelencia</strong>
+                        </p>
+                        <a class="fw-semibold fs-6 px-4 py-2 btn btn-success shadow rounded-5 bg-green border-green d-flex justify-content-around align-items-center">
+                            <img src="assets/icon-pdf.svg" width="24" alt="" class="me-3">
+                            Descargar Programa
+                        </a>
                     </div>
-                    <div class="col-4 d-none d-lg-flex justify-content-end">
-                        <img src="assets/isologo.svg" alt="">
+                    <div class="col-12 my-5 my-lg-0 col-lg-5 d-flex justify-content-end align-lg-items-end banner-logo">
+                        <address class="text-light fs-4">
+                            <span class="display-4 d-block">
+                                <span class="fw-semibold">29</span>AGO
+                            </span>
+                            <span class="fw-light d-block">Avenida España 554,</span>
+                            Santiago
+                        </address>
                     </div>
                 </div>
             </div>
@@ -139,27 +110,24 @@
                                 </div>
                             </div>
                             <div class="col-md-11">
-                                <p class="m-0 h4">Donde la innovación converge con la excelencia, organizado por la
-                                    <strong>Fundación Educacional Comeduc</strong>, es un encuentro sin precedentes,
-                                    donde la innovación y el diálogo se unen para redefinir el futuro de la
-                                    <strong>Educación Media Técnico Profesional en Chile</strong>.</p>
+                                <p class="m-0 h4">
+                                    La <strong>Fundación Educacional Comeduc</strong> te invita a participar de un evento sin
+                                    precedentes, donde la <strong>innovación</strong> y la <strong>excelencia</strong> se encuentran para
+                                    <strong>transformar la Educación Media Técnico-Profesional en Chile</strong>
+                                </p>
                             </div>
                         </div>
                     </article>
                     <article>
                         <div class="card-body row">
-                            <div class="col-md-1 d-flex justify-content-center mb-3 mb-lg-0">
+                            <div class="col-md-1 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                                 <div class="border border-blue border-5 rounded-circle bg-blue d-flex align-items-center justify-content-center"
                                     style="height:48px; width:48px">
                                     <img height="28" width="28" src="assets/icon-people.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-11">
-                                <p class="m-0 h4">Este evento busca ser un <strong>punto de encuentro</strong> entre la
-                                    comunidad educativa de nuestra Fundación, el <strong>mundo empresarial</strong> y el
-                                    <strong>sector académico</strong>, contribuyendo no sólo al <strong>crecimiento de
-                                        nuestros estudiantes</strong> sino también al desarrollo sostenible de
-                                    <strong>nuestra sociedad</strong>.</p>
+                            <div class="col-md-11 align-items-center d-flex">
+                                <p class="m-0 h4"><strong>19 de agosto</strong> - confirmación y revisión de cupos</p>
                             </div>
                         </div>
                     </article>
@@ -207,7 +175,7 @@
                                 <label for="nombre" class="form-label mb-0">Teléfono</label>
                                 <input type="text" id="nombre" class="form-control rounded-1">
                             </div>
-                            <button type="submit" class="py-3 w-100 btn bg-green text-light">Inscríbete</button>
+                            <button type="submit" class="py-2 w-100 btn bg-green text-light">Inscríbete</button>
                         </fieldset>
                     </form>
                 </div>
@@ -217,11 +185,11 @@
         <section class="py-5 bg-light" id="cronograma">
             <div class="container">
                 <header>
-                    <h2>Cronograma</h2>
+                    <h2 class="fw-semibold">Cronograma</h2>
                 </header>
                 <div class="row justify-content-center mb-4 crono">
                     <div class="col-5">
-                        <div class="cronograma-image">
+                        <div class="cronograma-image border-primary">
                             <img src="assets/cronograma-1.jpg" alt="">
                         </div>
                     </div>
@@ -231,7 +199,7 @@
                     </div>
                     <div class="col-5 text-start">
                         <h3>
-                            <strong class="text-primary d-block mb-1 fw-light">29 de julio</strong>
+                            <strong class="text-primary d-block mb-1">29 de julio</strong>
                             <span class="fs-5 fw-semibold">Inicio de inscripciones y programa</span>
                         </h3>
                         <p class="fw-light fs-6">Se publica programa del evento, invitados e inicia el periodo de
@@ -241,7 +209,7 @@
                 <div class="row justify-content-center mb-4 crono">
                     <div class="col-5 text-end">
                         <h3>
-                            <strong class="text-aqua d-block mb-2 fw-light">12 de agosto</strong>
+                            <strong class="text-aqua d-block mb-2">12 de agosto</strong>
                             <span class="fs-5 fw-semibold">Cierre de inscripciones</span>
                         </h3>
                         <p class="fw-light fs-6">Revisión de inscripciones</p>
@@ -259,7 +227,7 @@
 
                 <div class="row justify-content-center mb-4 crono">
                     <div class="col-5">
-                        <div class="cronograma-image">
+                        <div class="cronograma-image border-blue">
                             <img src="assets/cronograma-3.jpg" alt="">
                         </div>
                     </div>
@@ -269,7 +237,7 @@
                     </div>
                     <div class="col-5 text-start">
                         <h3>
-                            <strong class="text-blue d-block mb-2 fw-light">19 de agosto</strong>
+                            <strong class="text-blue d-block mb-2">19 de agosto</strong>
                             <span class="fs-5 fw-semibold">Ratificación inscripciones</span>
                         </h3>
                         <p class="fw-light fs-6">Confirmación y ratificación de participantes. Disponibilidad de cupos
@@ -280,7 +248,7 @@
                 <div class="row justify-content-center mb-4 crono">
                     <div class="col-5 text-end">
                         <h3>
-                            <strong class="text-primary d-block mb-1 fw-light">29 de agosto</strong>
+                            <strong class="text-primary d-block mb-1">29 de agosto</strong>
                             <span class="fs-5 fw-semibold">Día del evento Seminario TP</span>
                         </h3>
                         <p class="fw-light fs-6">Actividad presencial en auditorio del Instituto Superior de Comercio,
@@ -290,7 +258,7 @@
                         <span class="bullet"></span>
                     </div>
                     <div class="col-5">
-                        <div class="cronograma-image">
+                        <div class="cronograma-image border-primary">
                             <img src="assets/cronograma-4.jpg" alt="">
                         </div>
                     </div>

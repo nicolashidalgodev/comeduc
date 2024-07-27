@@ -38,8 +38,8 @@ main{
     tramsition: all .3s ease;
 }
 
-.nav-item{
-    padding: 0 8px;
+.navbar-nav .nav-item:not(:last-of-type){
+    padding-right: 16px;
 }
 
 .nav-link{
@@ -54,7 +54,7 @@ main{
 .navbar-toggler,
 .navbar-toggler:hover,
 .navbar-toggler:focus,
-.navbar-toggler:focus-visible,{
+.navbar-toggler:focus-visible{
     border: none;
     box-shadow: none;
     padding: 0;
@@ -72,10 +72,12 @@ main{
 
 .navbar{
     height: auto; 
+    max-height: 100px;
+    transition: max-height .1s ease;
 }
 
 .navbar.active{
-    height: 60px;
+    max-height: 60px;
     background: rgba(0,0,0,.75);
 } 
 
@@ -125,7 +127,7 @@ main{
     color: var(--primary);
     font-weight: 600;
     font-size: 14px;
-    padding: 8px 24px;
+    padding: 12px 24px;
 }
 
 .btn-inscribete:hover,
@@ -137,12 +139,23 @@ main{
 
 header.banner{
     padding: 12em 0;
-    height: 100vh;
+    height: calc(100vh + 60);
     background: var(--blue); 
     position: relative;
     overflow: hidden;
     background: rgba(9, 18, 57, .65);
 } 
+
+header.banner:after{
+    content: "";
+    display: block;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background: url(assets/banner-curve.svg) -20px 0 no-repeat;
+    width: 100%;
+    height: 60px;
+}
 
 header.banner .carousel{
     opacity: .25;
@@ -150,6 +163,7 @@ header.banner .carousel{
     top: 0;
     left: 0;
 } 
+
 header.banner .container{
     z-index: 3;
     position: relative;
@@ -159,11 +173,42 @@ header.banner .carousel-fade img{
     object-fit: cover; 
 }
 
+header.banner .banner-logo{
+    background: url(assets/isologo.svg) no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+
+
+header.banner .banner-logo address{
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+    margin: 0;
+}
+
+
 @media (max-width: 780px){
+
+    header.banner:after{
+        display: none; 
+    }
 
     header.banner .carousel-fade img{ 
        height: 100vh
     }   
+
+    header.banner .banner-logo{
+        background: url(assets/isologo.svg) no-repeat 20px center;
+        background-size: 20%; 
+    }
+
+    header.banner .banner-logo address{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin: 24px 0;
+    }
 
 }
 
@@ -266,7 +311,7 @@ strong{
 }
 
 .bg-grey{
-    background: var(--grey);
+    background: var(--grey-2);
 }
 
 .bg-gradient{
@@ -358,6 +403,11 @@ strong{
 
 .card-primary .circle-image{
     border: 4px solid var(--primary);
+}
+
+.crono{
+    height: auto;
+    min-height: 240px;
 }
 
 .cronograma-image{ 
@@ -522,25 +572,11 @@ footer nav{
         height: auto;
         background: #000000;
         width: 100%;
-        padding: 10px 20px;
+        padding: 10px 0;
     } 
 
     .navbar .container-fluid{
         flex-direction: column; 
-    }
-
-    .navbar:after{
-        content: '';
-        background: url(svg/menu-deco.svg) no-repeat center center;
-        background-size: contain;
-        bottom: -30px;
-        display: block;
-        height: 30px;
-        left: 0;
-        margin: 0 auto;
-        width: 350px;
-        position: absolute;
-        right: 0; 
     }
     
 }
