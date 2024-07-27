@@ -7,7 +7,7 @@
     --lightgrey: #E0EDC5;
     --dark: #2B2B2B;
     --form: rgba(0,68,122,.75);
-    --panel: rgba(11,19,52,70);
+    --panel: rgba(11,19,52,.70);
     --darkblue: #060A1B;
     --darkblue2: #0B1334;
     --celeste: #00B1E9;
@@ -35,7 +35,7 @@ main{
 
 .navbar{
     height: auto;
-    tramsition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .navbar-nav .nav-item:not(:last-of-type){
@@ -189,6 +189,10 @@ header.banner .banner-logo address{
 
 
 @media (max-width: 780px){
+    
+    header.banner {
+        height: 100vh;
+    }
 
     header.banner:after{
         display: none; 
@@ -285,8 +289,8 @@ strong{
     color: var(--primary)!important;
 }
 
-.text-blue{
-    color: var(--secondary)
+.text-blue, .text-secodary{
+    color: var(--secondary)!important;
 }
 
 .text-aqua{
@@ -405,6 +409,11 @@ strong{
     border: 4px solid var(--primary);
 }
 
+#cronograma{
+    background: url(assets/bg-crono.svg) no-repeat -50px center; 
+    background-attachment: fixed;
+}
+
 .crono{
     height: auto;
     min-height: 240px;
@@ -412,7 +421,7 @@ strong{
 
 .cronograma-image{ 
     width: 100%;
-    height: 240px;
+    height: 180px;
     overflow: hidden;
     border-radius: 8px;
     border: 4px solid var(--celeste);
@@ -494,7 +503,7 @@ strong{
     height: 100%;
     display: block;
     position: absolute;
-    background-image: url(assets/form-bg.jpg);
+    background-image: url(assets/bg-form2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
