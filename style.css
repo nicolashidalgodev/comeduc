@@ -154,8 +154,9 @@ header.banner:after{
     right: 0;
     position: absolute;
     background: url(assets/banner-curve.svg) -20px 0 no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 60px;
+    z-index: 1;
 }
 
 header.banner .carousel{
