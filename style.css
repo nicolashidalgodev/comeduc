@@ -322,7 +322,7 @@ strong{
     background-repeat: no-repeat;
     background-size: 80%;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center bottom;
     background-color: transparent;
     z-index: 1; 
 }
@@ -399,7 +399,8 @@ strong{
 }
 
 #cronograma{
-    background: url(assets/bg-crono.svg) no-repeat -50px center; 
+    background: url(assets/bg-crono.png) no-repeat -80px center; 
+    background-size:auto;
     background-attachment: fixed;
 }
 
@@ -496,7 +497,7 @@ strong{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 0;
+    background-position: center center;
     background-color: transparent;
     z-index: 1;
     margin-top: -50px; 
@@ -546,6 +547,10 @@ footer nav{
 
 .navbar-nav .nav-item:not(:last-of-type){
     padding-right: 0;
+}
+
+.border-bottom-primary{
+    border-bottom: 3px solid var(--primary);
 }
 
 .multiply{
