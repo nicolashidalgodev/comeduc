@@ -171,7 +171,9 @@ header.banner .container{
 
 header.banner .carousel-fade img{ 
     object-fit: cover; 
+    width: 100%;
     opacity: .25;
+    mix-blend-mode: darken;
 }
 
 header.banner .banner-logo{
