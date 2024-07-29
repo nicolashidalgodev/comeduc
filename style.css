@@ -61,7 +61,7 @@ main{
     text-align: left;
     padding: 20px; 
     background-color: #000000!important;
-    width: 70%!important!;
+    width: 50%!important;
 } 
 
 .navbar{
@@ -165,7 +165,7 @@ header.banner .carousel-fade{
     top: 0;
     left: 0;
     background: var(--blue); 
-    z-indwz: 0;
+    z-index: 0;
 }
 
 header.banner .container-fluid{
@@ -174,7 +174,8 @@ header.banner .container-fluid{
 } 
 
 header.banner .carousel-fade {
-    mix-blend-mode: multiply;
+    mix-blend-mode: luminosity;
+    opacity: .4;
 }
 
 header.banner .carousel-fade img{ 
@@ -231,6 +232,9 @@ h2{
     font-size: 40px;
     font-weight: 200;
     color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h2.text-light{
@@ -254,6 +258,12 @@ h2.text-light:before{
 
 h2 strong{
     font-weight: 600
+}
+
+@media(max-width: 578px){
+    h2{
+        font-size: 26px;
+    }
 }
 
 p, h4{
