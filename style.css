@@ -57,13 +57,11 @@ main{
 }
 
 .offcanvas {
-    width: 50%;
-}
-
-.offcanvas{
     background: black;
     text-align: left;
     padding: 20px; 
+    background-color: #000000!important;
+    width: 70%!important!;
 } 
 
 .navbar{
@@ -82,9 +80,10 @@ main{
     align-items: center;
 }
 
+/*
 .navbar.active .offcanvas{
     align-items: start; 
-}
+}*/
 
 .navbar.active:after{
     display: none;
@@ -160,11 +159,10 @@ header.banner:after{
 }
 
 header.banner .carousel{
-    opacity: .25;
     position: absolute;
     top: 0;
     left: 0;
-} 
+}
 
 header.banner .container{
     z-index: 3;
@@ -173,6 +171,7 @@ header.banner .container{
 
 header.banner .carousel-fade img{ 
     object-fit: cover; 
+    opacity: .25;
 }
 
 header.banner .banner-logo{
@@ -187,35 +186,6 @@ header.banner .banner-logo address{
     bottom: -20px;
     right: -50px;
     margin: 0;
-}
-
-
-@media (max-width: 780px){
-    
-    header.banner {
-        height: 100vh;
-    }
-
-    header.banner:after{
-        display: none; 
-    }
-
-    header.banner .carousel-fade img{ 
-       height: 100vh
-    }   
-
-    header.banner .banner-logo{
-        background: url(assets/isologo.svg) no-repeat 20px center;
-        background-size: 20%; 
-    }
-
-    header.banner .banner-logo address{
-        position: relative;
-        right: 0;
-        bottom: 0;
-        margin: 24px 0;
-    }
-
 }
 
 /* typography*/
@@ -557,13 +527,12 @@ footer nav{
     background: var(--darkblue);
 }
 
-.offcanvas{
-    background-color: #000000!important;
-    width: 70%!important;
-}
-
 .navbar-nav .nav-item:not(:last-of-type){
     padding-right: 0;
+}
+
+.multiply{
+    mix-blend-mode: multiply;
 }
 
 @media (min-width: 576px){
@@ -599,6 +568,31 @@ footer nav{
     }
     
 }
-.multiply{
-    mix-blend-mode: multiply;
+
+@media (max-width: 780px){
+    
+    header.banner {
+        height: 100vh;
+    }
+
+    header.banner:after{
+        display: none; 
+    }
+
+    header.banner .carousel-fade img{ 
+       height: 100vh
+    }   
+
+    header.banner .banner-logo{
+        background: url(assets/isologo.svg) no-repeat 20px center;
+        background-size: 20%; 
+    }
+
+    header.banner .banner-logo address{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin: 24px 0;
+    }
+
 }
