@@ -160,10 +160,12 @@ header.banner:after{
     background-size: 100%;
 }
 
-header.banner .carousel{
+header.banner .carousel-fade{
     position: absolute;
     top: 0;
     left: 0;
+    background: var(--blue); 
+    z-indwz: 0;
 }
 
 header.banner .container{
