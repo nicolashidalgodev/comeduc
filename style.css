@@ -153,10 +153,11 @@ header.banner:after{
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url(assets/banner-curve.svg) -20px 0 no-repeat;
+    background: url(assets/banner-curve.svg) 0 0 no-repeat;
     width: 100vw;
     height: 60px;
     z-index: 1;
+    background-size: 100%;
 }
 
 header.banner .carousel{
@@ -172,8 +173,7 @@ header.banner .container{
 
 header.banner .carousel-fade img{ 
     object-fit: cover; 
-    width: 100%;
-    opacity: .25;
+    width: 100vw;
     mix-blend-mode: darken;
 }
 
