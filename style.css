@@ -168,15 +168,17 @@ header.banner .carousel-fade{
     z-indwz: 0;
 }
 
-header.banner .container{
+header.banner .container-fluid{
     z-index: 3;
     position: relative;
 } 
 
+header.banner .carousel-fade {
+    mix-blend-mode: multiply;
+}
+
 header.banner .carousel-fade img{ 
-    object-fit: cover; 
-    width: 100vw;
-    mix-blend-mode: darken;
+    object-fit: cover;
 }
 
 header.banner .banner-logo{
