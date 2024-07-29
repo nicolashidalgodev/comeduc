@@ -153,7 +153,7 @@ header.banner:after{
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url(assets/banner-curve.svg) 0 0 no-repeat;
+    background: url(assets/banner-curve.svg) 0 20px no-repeat;
     width: 100vw;
     height: 60px;
     z-index: 1;
