@@ -617,4 +617,13 @@ footer nav{
         margin: 24px 0;
     }
 
+    .nav-link{
+        font-size: 18px!important;
+        margin-bottom: 16px;
+    }
+
+    .btn-inscribete{
+        font-size: 18px;
+    }
+
 }
