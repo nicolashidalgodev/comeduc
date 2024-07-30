@@ -146,7 +146,7 @@ header.banner{
     overflow: hidden;
     background: rgba(9, 18, 57, .65);
     height: 100vh;
-    max-height: 1200px;
+    max-height: 960px;
 } 
 
 header.banner:after{
@@ -162,6 +162,15 @@ header.banner:after{
     background-size: 100%;
 }
 
+
+header.banner .carousel-item{
+    height: 100%;
+}
+
+header.banner .carousel-inner{
+    height: 100%;
+}
+
 header.banner .carousel-fade{
     position: absolute;
     top: 0;
@@ -171,6 +180,7 @@ header.banner .carousel-fade{
     mix-blend-mode: luminosity;
     opacity: .4;
     width: 100vw;
+    height: 100%;
 }
 
 header.banner .container-fluid{
@@ -180,6 +190,7 @@ header.banner .container-fluid{
 
 header.banner .carousel-fade img{ 
     object-fit: cover;
+    height: 100%;
     object-position: 70%;
 }
 
