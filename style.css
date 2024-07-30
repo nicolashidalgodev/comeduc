@@ -145,6 +145,8 @@ header.banner{
     position: relative;
     overflow: hidden;
     background: rgba(9, 18, 57, .65);
+    height: 100vh;
+    max-height: 1200px;
 } 
 
 header.banner:after{
@@ -166,6 +168,9 @@ header.banner .carousel-fade{
     left: 0;
     background: var(--blue); 
     z-index: 0;
+    mix-blend-mode: luminosity;
+    opacity: .4;
+    width: 100vw;
 }
 
 header.banner .container-fluid{
@@ -173,13 +178,9 @@ header.banner .container-fluid{
     position: relative;
 } 
 
-header.banner .carousel-fade {
-    mix-blend-mode: luminosity;
-    opacity: .4;
-}
-
 header.banner .carousel-fade img{ 
     object-fit: cover;
+    object-position: 70%;
 }
 
 header.banner .banner-logo{
@@ -187,7 +188,6 @@ header.banner .banner-logo{
     background-size: contain;
     position: relative;
 }
-
 
 header.banner .banner-logo address{
     position: absolute;
@@ -545,6 +545,11 @@ footer nav{
     background: var(--darkblue);
 }
 
+.navbar-nav .nav-item{
+    display: flex;
+    align-items: center;
+}
+
 .navbar-nav .nav-item:not(:last-of-type){
     padding-right: 0;
 }
@@ -584,7 +589,7 @@ footer nav{
     .navbar .container-fluid{
         flex-direction: column; 
     }
-       
+    
     .navbar-nav .nav-item:not(:last-of-type){
         padding-right: 16px;
     }
@@ -615,6 +620,10 @@ footer nav{
         right: 0;
         bottom: 0;
         margin: 24px 0;
+    }
+
+    .navbar-nav .nav-item{
+        justify-content: end;
     }
 
     .nav-link{
